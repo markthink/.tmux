@@ -24,6 +24,9 @@ $ git clone https://github.com/gpakosz/.tmux.git
 $ ln -s -f .tmux/.tmux.conf
 $ cp .tmux/.tmux.conf.local .
 $ tmux source-file ~/.tmux.conf
+
+# pip install powerline-status
+# powerline-config tmux setup
 ```
 
 💡 You can clone the repository anywhere you want, provided you create the
