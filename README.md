@@ -28,6 +28,12 @@ $ tmux source-file ~/.tmux.conf
 # pip install powerline-status
 # powerline-config tmux setup
 ```
+- [tmux 指引](https://tao-of-tmux.readthedocs.io/zh_CN/latest/manuscript/09-status-bar.html)
+
+```bash
+# 移除所有 session 
+tmux ls | awk '{print $1}'|sed 's/.$//'| xargs -t -n1 tmux kill-session -t
+```
 
 💡 You can clone the repository anywhere you want, provided you create the
 proper `~/.tmux.conf` symlink and you copy the `.tmux.conf.local` sample file in
